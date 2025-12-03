@@ -1,1 +1,139 @@
-Landing Page
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>pjhenry.us | Under Construction</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    :root {
+      --accent: #1b1f24;
+      --bg: #F5E9E0;        /* inverted background */
+      --card-bg: #ffffff;   /* bright card */
+      --text-main: #1b1f24;
+      --text-sub: #4a4a4a;
+      --icon-bg: #ddd5ce;
+      --icon-bg-hover: #c8bfb7;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text-main);
+      font-family: system-ui, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .card {
+      padding: 2.5rem 2rem;
+      border-radius: 1rem;
+      background: var(--card-bg);
+      box-shadow: 0 18px 30px rgba(0, 0, 0, 0.15);
+      max-width: 480px;
+      width: 90%;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 0.75rem;
+      color: var(--text-main);
+    }
+
+    p {
+      margin-bottom: 1.8rem;
+      font-size: 1rem;
+      color: var(--text-sub);
+    }
+
+    .socials {
+      display: flex;
+      justify-content: center;
+      gap: 1.2rem;
+    }
+
+    .social-link {
+      width: 55px;
+      height: 55px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: var(--icon-bg);
+      border-radius: 12px;
+      transition: transform 0.15s ease, background 0.15s ease;
+    }
+
+    .social-link:hover {
+      transform: translateY(-3px);
+      background: var(--icon-bg-hover);
+    }
+
+    .social-link-icon {
+      width: 28px;
+      height: 28px;
+      fill: var(--accent);
+    }
+
+    .footer-note {
+      margin-top: 1.4rem;
+      font-size: 0.85rem;
+      color: var(--text-sub);
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <h1>This site is under construction</h1>
+    <p>Sorry for the inconvenience. Please contact me below.</p>
+
+    <div class="socials">
+      <!-- LinkedIn -->
+      <a class="social-link" target="_blank" rel="noopener noreferrer"
+         href="https://www.linkedin.com/in/phillipjhenry/">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+             class="social-link-icon" aria-label="LinkedIn">
+          <path d="m437 0h-362c-41.355469 0-75 33.644531-75 75v362c0 41.355469 33.644531 75 75 75h362c41.355469 0 75-33.644531 75-75v-362c0-41.355469-33.644531-75-75-75zm45 437c0 24.8125-20.1875 45-45 45h-362c-24.8125 0-45-20.1875-45-45v-362c0-24.8125 20.1875-45 45-45h362c24.8125 0 45 20.1875 45 45zm0 0"></path>
+          <path d="m91 422h90v-212h-90zm30-182h30v152h-30zm0 0"></path>
+          <path d="m331.085938 210c-.027344 0-.058594 0-.085938 0-10.371094 0-20.472656 1.734375-30 5.101562v-5.101562h-90v212h90v-107c0-8.269531 6.730469-15 15-15s15 6.730469 15 15v107h90v-117.3125c0-48.546875-39.382812-94.640625-89.914062-94.6875zm59.914062 182h-30v-77c0-24.8125-20.1875-45-45-45s-44.996094 20.1875-45 44.996094v77.003906h-30v-152h30v30.019531l24.007812-18.03125c10.441407-7.84375 22.886719-11.988281 35.992188-11.988281h.058594c31.929687.03125 59.941406 30.257812 59.941406 64.6875zm0 0"></path>
+          <path d="m91 180h90v-90h-90zm30-60h30v30h-30zm0 0"></path>
+        </svg>
+      </a>
+
+      <!-- GitHub -->
+      <a class="social-link" target="_blank" rel="noopener noreferrer"
+         href="https://github.com/zidelen">
+        <svg class="social-link-icon" xmlns="http://www.w3.org/2000/svg"
+             viewBox="0 0 16 16" aria-label="GitHub">
+          <path fill-rule="evenodd"
+            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 
+            2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 
+            0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52
+            -.01-.53.63-.01 1.08.58 1.23.82.72 
+            1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 
+            0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 
+            0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 
+            0 1.36.09 2 .27 1.53-1.04 2.2-.82 
+            2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 
+            1.27.82 2.15 0 3.07-1.87 3.75-3.65 
+            3.95.29.25.54.73.54 1.48 0 1.07-.01 
+            1.93-.01 2.2 0 .21.15.46.55.38A8.013 
+            8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+        </svg>
+      </a>
+    </div>
+
+    <div class="footer-note">
+      pjhenry.us
+    </div>
+  </main>
+</body>
+</html>
