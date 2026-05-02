@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Phillip Henry — Software developer specializing in real-time systems, desktop applications, and mathematics research." />
+  <meta name="description" content="Phillip Henry — Freelance web and software developer based in Austin, TX. Available for hire." />
   <title>Phillip Henry — Software Developer</title>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%230f0e0d' rx='6'/><text x='3' y='24' font-size='19' font-weight='800' font-family='monospace' fill='%23c9943a'>PJ</text></svg>" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -288,57 +288,6 @@
       margin-bottom: 1.25rem;
     }
 
-    /* ── About ── */
-    #about { background: var(--bg-alt); }
-
-    .about-grid {
-      display: grid;
-      grid-template-columns: 1.4fr 1fr;
-      gap: 4rem;
-      align-items: start;
-      margin-top: 0.75rem;
-    }
-
-    .about-text p {
-      color: var(--text-2);
-      font-size: 1rem;
-      line-height: 1.85;
-      margin-bottom: 1.1rem;
-    }
-    .about-text p:last-child { margin-bottom: 0; }
-    .about-text strong { color: var(--text); font-weight: 600; }
-
-    .about-stats {
-      display: flex;
-      flex-direction: column;
-      gap: 0.875rem;
-    }
-
-    .stat {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 1.5rem 1.75rem;
-      transition: border-color 0.25s, transform 0.25s var(--ease);
-    }
-    .stat:hover {
-      border-color: rgba(201,148,58,0.25);
-      transform: translateX(4px);
-    }
-    .stat-num {
-      font-size: 2rem;
-      font-weight: 800;
-      letter-spacing: -0.04em;
-      line-height: 1;
-      color: var(--accent);
-      margin-bottom: 0.35rem;
-    }
-    .stat-label {
-      font-size: 0.8rem;
-      color: var(--text-2);
-      line-height: 1.5;
-    }
-
     /* ── Skills ── */
     #skills { background: var(--bg); }
 
@@ -375,153 +324,6 @@
       border-color: rgba(201,148,58,0.4);
       color: var(--accent);
       background: rgba(201,148,58,0.07);
-    }
-
-    /* ── Projects ── */
-    #projects { background: var(--bg-alt); }
-
-    .project-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
-      gap: 1.2rem;
-      margin-top: 2.5rem;
-    }
-
-    .project-card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 1.75rem;
-      display: flex;
-      flex-direction: column;
-      position: relative;
-      overflow: hidden;
-      transition: transform 0.25s var(--ease), border-color 0.25s, box-shadow 0.25s;
-    }
-    .project-card::before {
-      content: '';
-      position: absolute;
-      inset: 0 0 auto;
-      height: 2px;
-      background: var(--accent);
-      opacity: 0;
-      transition: opacity 0.25s;
-    }
-    .project-card:hover {
-      transform: translateY(-5px);
-      border-color: rgba(201,148,58,0.2);
-      box-shadow: 0 20px 50px rgba(0,0,0,0.4);
-    }
-    .project-card:hover::before { opacity: 1; }
-
-    .proj-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      margin-bottom: 1.1rem;
-    }
-    .proj-icon { font-size: 1.5rem; line-height: 1; }
-    .proj-live {
-      font-family: var(--mono);
-      font-size: 0.59rem;
-      font-weight: 500;
-      letter-spacing: 0.06em;
-      color: var(--accent);
-      border: 1px solid rgba(201,148,58,0.25);
-      background: rgba(201,148,58,0.07);
-      padding: 0.25rem 0.55rem;
-      border-radius: 4px;
-    }
-
-    .project-card h3 {
-      font-size: 1rem;
-      font-weight: 700;
-      letter-spacing: -0.01em;
-      margin-bottom: 0.5rem;
-    }
-    .project-card p {
-      color: var(--text-2);
-      font-size: 0.845rem;
-      line-height: 1.72;
-      flex: 1;
-      margin-bottom: 1.4rem;
-    }
-
-    .proj-footer {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
-      gap: 0.75rem;
-    }
-    .proj-tags { display: flex; flex-wrap: wrap; gap: 0.35rem; }
-    .proj-tag {
-      font-family: var(--mono);
-      font-size: 0.65rem;
-      font-weight: 400;
-      padding: 0.2rem 0.5rem;
-      border-radius: 5px;
-      background: rgba(255,255,255,0.05);
-      border: 1px solid rgba(255,255,255,0.11);
-      color: var(--text-2);
-    }
-    .proj-link {
-      font-size: 0.78rem;
-      font-weight: 600;
-      color: var(--text-3);
-      text-decoration: none;
-      white-space: nowrap;
-      transition: color 0.2s;
-      flex-shrink: 0;
-    }
-    .proj-link:hover { color: var(--accent); }
-
-    /* ── Research ── */
-    .research-block {
-      margin-top: 1.5rem;
-      border-radius: 18px;
-      padding: 2.25rem 2.5rem;
-      background: rgba(201,148,58,0.05);
-      border: 1px solid rgba(201,148,58,0.18);
-      box-shadow: inset 0 1px 0 rgba(255,255,255,0.03);
-      position: relative;
-      overflow: hidden;
-    }
-
-    .research-eyebrow {
-      font-family: var(--mono);
-      font-size: 0.65rem;
-      font-weight: 500;
-      letter-spacing: 0.08em;
-      color: var(--accent);
-      margin-bottom: 0.75rem;
-    }
-    .research-block h3 {
-      font-size: 1.025rem;
-      font-weight: 700;
-      line-height: 1.45;
-      margin-bottom: 0.75rem;
-      max-width: 600px;
-    }
-    .research-block p {
-      color: var(--text-2);
-      font-size: 0.875rem;
-      line-height: 1.78;
-      max-width: 600px;
-    }
-    .research-meta {
-      margin-top: 1.25rem;
-      font-size: 0.775rem;
-      color: var(--text-3);
-      display: flex;
-      align-items: center;
-      gap: 0.7rem;
-    }
-    .research-meta::before {
-      content: '';
-      width: 18px;
-      height: 1px;
-      background: var(--text-3);
-      flex-shrink: 0;
     }
 
     /* ── Contact ── */
@@ -715,12 +517,6 @@
       .nav-links.open { opacity: 1; pointer-events: auto; }
       .nav-links a { font-size: 1.4rem; font-weight: 600; }
 
-      .about-grid { grid-template-columns: 1fr; gap: 2rem; }
-      .about-stats { flex-direction: row; flex-wrap: wrap; gap: 0.75rem; }
-      .stat { flex: 1 1 45%; min-width: 0; }
-      .stat:hover { transform: none; }
-
-      .research-block { padding: 1.75rem; }
       .hero h1 { letter-spacing: -0.04em; }
 
       .client-bar { flex-direction: column; min-height: auto; }
@@ -740,9 +536,7 @@
       <span class="bar"></span>
     </button>
     <ul class="nav-links" id="nav-links">
-      <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
       <li><a href="#client-work">Client Work</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
@@ -753,7 +547,7 @@
     <div class="orb orb-1"></div>
 
     <div class="hero-inner">
-      <div class="hero-badge">Austin, TX &mdash; Open to new roles</div>
+      <div class="hero-badge">Austin, TX &mdash; Available for freelance work</div>
 
       <h1>
         Phillip<br>
@@ -761,11 +555,11 @@
       </h1>
 
       <p class="hero-sub">
-        Software developer who ships. I've built a live self-hosted multiplayer chess platform, a cross-platform desktop video tool, and a chess engine from scratch — and spent a summer doing pure math research with a university professor.
+        I build websites and software for small businesses and individuals. If you need a site, an app, or something in between — let's talk.
       </p>
 
       <div class="hero-ctas">
-        <a class="btn btn-fill" href="#projects">View my work</a>
+        <a class="btn btn-fill" href="#client-work">View my work</a>
         <a class="btn btn-ghost" href="#contact">Get in touch</a>
       </div>
     </div>
@@ -775,37 +569,6 @@
       Scroll
     </div>
   </div>
-
-  <!-- About -->
-  <section id="about">
-    <div class="container">
-      <span class="eyebrow">About</span>
-      <div class="about-grid">
-        <div class="about-text">
-          <h2 class="section-title reveal">Builder. Researcher.<br>Problem solver.</h2>
-          <p class="reveal" data-delay="1">
-            I'm a <strong>CS graduate from Texas State University</strong> with a B.S. in Computer Science and a minor in Psychology. My coursework spanned data structures, algorithms, computer architecture, and software engineering.
-          </p>
-          <p class="reveal" data-delay="2">
-            I build across the full stack. I've deployed a <strong>self-hosted real-time chess platform</strong> on my own Ubuntu server, shipped a cross-platform desktop video tool with a team using Agile, and written a chess engine from scratch in Java. I care about the full picture — from architecture to production.
-          </p>
-          <p class="reveal" data-delay="3">
-            I also spent a summer doing <strong>pure mathematics research</strong> with a professor, exploring Khovanov homology and contributing toward a potential journal publication. I bring intellectual depth wherever I go.
-          </p>
-        </div>
-        <div class="about-stats reveal">
-          <div class="stat">
-            <div class="stat-num">3</div>
-            <div class="stat-label">Software projects shipped across<br>web, desktop &amp; systems</div>
-          </div>
-          <div class="stat">
-            <div class="stat-num">1</div>
-            <div class="stat-label">Math research paper in progress<br>Khovanov homology</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- Skills -->
   <section id="skills">
@@ -855,79 +618,6 @@
             <span class="tag">UML Design</span>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects -->
-  <section id="projects">
-    <div class="container">
-      <span class="eyebrow">Selected Work</span>
-      <h2 class="section-title reveal">Things I've built</h2>
-
-      <div class="project-grid">
-
-        <div class="project-card reveal" data-delay="1">
-          <div class="proj-header">
-            <div class="proj-icon">♟</div>
-            <span class="proj-live">Live &middot; Self-hosted</span>
-          </div>
-          <h3>Chess Online</h3>
-          <p>Real-time multiplayer chess running on my personal Ubuntu server. Players connect instantly via WebSockets — no polling, no lag. Custom room management and game state sync, served over Apache.</p>
-          <div class="proj-footer">
-            <div class="proj-tags">
-              <span class="proj-tag">JavaScript</span>
-              <span class="proj-tag">Socket.io</span>
-              <span class="proj-tag">Node.js</span>
-              <span class="proj-tag">Apache</span>
-              <span class="proj-tag">Ubuntu</span>
-            </div>
-            <a class="proj-link" href="https://github.com/zidelen" target="_blank" rel="noopener noreferrer">↗ GitHub</a>
-          </div>
-        </div>
-
-        <div class="project-card reveal" data-delay="2">
-          <div class="proj-header">
-            <div class="proj-icon">🎬</div>
-          </div>
-          <h3>VidCat</h3>
-          <p>Cross-platform desktop app for merging video files with a clean GUI. Built collaboratively using Agile with full SRS documentation. Wraps FFmpeg behind an Electron frontend for a native feel on any OS.</p>
-          <div class="proj-footer">
-            <div class="proj-tags">
-              <span class="proj-tag">Electron.js</span>
-              <span class="proj-tag">Node.js</span>
-              <span class="proj-tag">FFmpeg</span>
-            </div>
-            <a class="proj-link" href="https://github.com/zidelen" target="_blank" rel="noopener noreferrer">↗ GitHub</a>
-          </div>
-        </div>
-
-        <div class="project-card reveal" data-delay="3">
-          <div class="proj-header">
-            <div class="proj-icon">♜</div>
-          </div>
-          <h3>Java Chess Engine</h3>
-          <p>Chess engine and GUI built from scratch in Java. Custom piece movement logic, full board state management, move validation — no third-party game libraries. Complete JavaFX UI with a clean board renderer.</p>
-          <div class="proj-footer">
-            <div class="proj-tags">
-              <span class="proj-tag">Java</span>
-              <span class="proj-tag">JavaFX</span>
-              <span class="proj-tag">OOP</span>
-            </div>
-            <a class="proj-link" href="https://github.com/zidelen" target="_blank" rel="noopener noreferrer">↗ GitHub</a>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Research -->
-      <div class="research-block reveal">
-        <div class="research-eyebrow">Mathematics Research &middot; Summer 2024</div>
-        <h3>Enumerating Khovanov Differentials for Infinite Torus Braids on n Strands</h3>
-        <p>
-          Collaborated with Dr. Christine Ruey Shan Lee at Texas State University on a project exploring Khovanov homology — a categorification of the Jones polynomial from knot theory. Contributed to differential enumeration, data collection, pattern analysis, and academic writing in LaTeX, working toward a potential journal publication.
-        </p>
-        <div class="research-meta">Texas State University &middot; Department of Mathematics</div>
       </div>
     </div>
   </section>
