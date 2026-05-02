@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Phillip Henry — Freelance web and software developer based in Austin, TX. Available for hire." />
   <title>Phillip Henry — Software Developer</title>
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%230f0e0d' rx='6'/><text x='3' y='24' font-size='19' font-weight='800' font-family='monospace' fill='%23c9943a'>PJ</text></svg>" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%23faf8f5' rx='6'/><text x='3' y='24' font-size='19' font-weight='800' font-family='monospace' fill='%23c9943a'>PJ</text></svg>" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
@@ -13,14 +13,14 @@
   <style>
     /* ── Variables ── */
     :root {
-      --bg:      #0f0e0d;
-      --bg-alt:  #161513;
-      --surface: rgba(255,255,255,0.045);
-      --border:  rgba(255,255,255,0.09);
+      --bg:      #faf8f5;
+      --bg-alt:  #f2efe9;
+      --surface: rgba(0,0,0,0.04);
+      --border:  rgba(0,0,0,0.09);
       --accent:  #c9943a;
-      --text:    #f0ede8;
-      --text-2:  #9e9189;
-      --text-3:  #5c5248;
+      --text:    #1a1714;
+      --text-2:  #6b6059;
+      --text-3:  #a09890;
       --sans:    'Inter', system-ui, -apple-system, sans-serif;
       --mono:    'JetBrains Mono', 'Fira Code', monospace;
       --ease:    cubic-bezier(0.2, 0, 0, 1);
@@ -48,7 +48,7 @@
       align-items: center;
       backdrop-filter: blur(16px);
       -webkit-backdrop-filter: blur(16px);
-      background: rgba(15,14,13,0.70);
+      background: rgba(250,248,245,0.85);
       border-bottom: 1px solid transparent;
       transition: border-color 0.4s;
     }
@@ -140,7 +140,7 @@
     }
     .orb-1 {
       width: 700px; height: 700px;
-      background: radial-gradient(circle, rgba(201,148,58,0.11), transparent 70%);
+      background: radial-gradient(circle, rgba(201,148,58,0.15), transparent 70%);
       top: -260px; right: -140px;
       animation: drift 26s ease-in-out infinite;
     }
@@ -155,8 +155,8 @@
       position: absolute;
       inset: 0;
       background-image:
-        linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+        linear-gradient(rgba(0,0,0,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,0,0,0.04) 1px, transparent 1px);
       background-size: 64px 64px;
       pointer-events: none;
     }
@@ -289,7 +289,7 @@
     }
 
     /* ── Skills ── */
-    #skills { background: var(--bg); }
+    #skills { background: var(--bg-alt); }
 
     .skills-grid {
       display: grid;
@@ -327,7 +327,7 @@
     }
 
     /* ── Contact ── */
-    #contact { text-align: center; }
+    #contact { text-align: center; background: var(--bg-alt); }
 
     .contact-copy {
       color: var(--text-2);
@@ -503,7 +503,7 @@
         flex-direction: column;
         position: fixed;
         inset: 0;
-        background: rgba(15,14,13,0.97);
+        background: rgba(250,248,245,0.98);
         backdrop-filter: blur(20px);
         -webkit-backdrop-filter: blur(20px);
         justify-content: center;
