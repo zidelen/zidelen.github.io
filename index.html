@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Phillip Henry — Freelance web and software developer based in Austin, TX. Available for hire." />
+  <meta name="description" content="Phillip Henry — Freelance web and software developer based in Austin, TX. Custom websites and web apps for small businesses. Available for hire." />
   <title>Phillip Henry — Software Developer</title>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%23faf8f5' rx='6'/><text x='3' y='24' font-size='19' font-weight='800' font-family='monospace' fill='%23c9943a'>PJ</text></svg>" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -193,7 +193,7 @@
     .hero-sub {
       font-size: clamp(1rem, 1.6vw, 1.15rem);
       color: var(--text-2);
-      max-width: 540px;
+      max-width: 560px;
       line-height: 1.8;
       margin-bottom: 2.75rem;
     }
@@ -288,100 +288,58 @@
       margin-bottom: 1.25rem;
     }
 
-    /* ── Skills ── */
-    #skills { background: var(--bg-alt); }
+    /* ── About ── */
+    #about { background: var(--bg-alt); }
 
-    .skills-grid {
+    .about-body {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
-      gap: 2.25rem;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
       margin-top: 2.5rem;
+      align-items: start;
     }
 
-    .skill-group h3 {
-      font-family: var(--mono);
-      font-size: 0.67rem;
-      font-weight: 500;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 0.9rem;
-    }
-
-    .tag-row { display: flex; flex-wrap: wrap; gap: 0.4rem; }
-
-    .tag {
-      padding: 0.28rem 0.65rem;
-      border: 1px solid var(--border);
-      background: var(--surface);
-      border-radius: 6px;
-      font-size: 0.775rem;
-      color: var(--text-2);
-      transition: border-color 0.2s, color 0.2s, background 0.2s;
-      cursor: default;
-    }
-    .tag:hover {
-      border-color: rgba(201,148,58,0.4);
-      color: var(--accent);
-      background: rgba(201,148,58,0.07);
-    }
-
-    /* ── Contact ── */
-    #contact { text-align: center; background: var(--bg-alt); }
-
-    .contact-copy {
+    .about-text p {
       color: var(--text-2);
       font-size: 1rem;
-      line-height: 1.7;
-      max-width: 420px;
-      margin: 0 auto 2.75rem;
+      line-height: 1.85;
+      margin-bottom: 1.1rem;
+    }
+    .about-text p:last-child { margin-bottom: 0; }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.85rem;
     }
 
-    .contact-pills {
-      display: flex;
-      justify-content: center;
-      gap: 0.875rem;
-      flex-wrap: wrap;
-    }
-
-    .contact-pill {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.55rem;
-      padding: 0.75rem 1.4rem;
-      background: var(--surface);
+    .service-card {
+      padding: 1.25rem 1.3rem;
       border: 1px solid var(--border);
-      border-radius: 11px;
-      color: var(--text-2);
-      text-decoration: none;
-      font-size: 0.875rem;
-      font-weight: 500;
-      transition: border-color 0.2s, color 0.2s, transform 0.2s var(--ease);
+      border-radius: 12px;
+      background: rgba(255,255,255,0.55);
+      transition: border-color 0.2s, background 0.2s, transform 0.2s var(--ease);
     }
-    .contact-pill svg {
-      width: 16px; height: 16px;
-      fill: currentColor;
-      flex-shrink: 0;
-    }
-    .contact-pill:hover {
-      border-color: rgba(201,148,58,0.45);
-      color: var(--accent);
+    .service-card:hover {
+      border-color: rgba(201,148,58,0.35);
+      background: rgba(201,148,58,0.05);
       transform: translateY(-2px);
     }
-
-    /* ── Footer ── */
-    footer {
-      text-align: center;
-      padding: 2rem;
-      border-top: 1px solid var(--border);
-      color: var(--text-3);
-      font-family: var(--mono);
-      font-size: 0.75rem;
-      letter-spacing: 0.03em;
+    .service-card h4 {
+      font-size: 0.875rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      margin-bottom: 0.4rem;
+      color: var(--text);
+    }
+    .service-card p {
+      font-size: 0.795rem;
+      color: var(--text-2);
+      line-height: 1.65;
     }
 
-    /* ── Client Work ── */
-    #client-work { background: var(--bg); }
+    /* ── Work ── */
+    #work { background: var(--bg); }
 
     .client-list {
       display: flex;
@@ -481,6 +439,122 @@
     .mayfields-p { color: rgba(245,240,232,0.65); }
     .mayfields-tags span { background: transparent; color: #c9a84c; border: 1px solid rgba(201,168,76,0.35); }
 
+    /* ── Skills ── */
+    #skills { background: var(--bg-alt); }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+      gap: 2.25rem;
+      margin-top: 2.5rem;
+    }
+
+    .skill-group h3 {
+      font-family: var(--mono);
+      font-size: 0.67rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.9rem;
+    }
+
+    .tag-row { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+
+    .tag {
+      padding: 0.28rem 0.65rem;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      border-radius: 6px;
+      font-size: 0.775rem;
+      color: var(--text-2);
+      transition: border-color 0.2s, color 0.2s, background 0.2s;
+      cursor: default;
+    }
+    .tag:hover {
+      border-color: rgba(201,148,58,0.4);
+      color: var(--accent);
+      background: rgba(201,148,58,0.07);
+    }
+
+    /* ── Contact ── */
+    #contact { text-align: center; background: var(--bg-alt); }
+
+    .contact-copy {
+      color: var(--text-2);
+      font-size: 1rem;
+      line-height: 1.7;
+      max-width: 460px;
+      margin: 0 auto 1.75rem;
+    }
+
+    .contact-trust {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      margin-bottom: 2.75rem;
+    }
+    .trust-item {
+      font-family: var(--mono);
+      font-size: 0.72rem;
+      color: var(--text-3);
+      letter-spacing: 0.05em;
+      display: flex;
+      align-items: center;
+      gap: 0.45rem;
+    }
+    .trust-dot {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--accent);
+      flex-shrink: 0;
+    }
+
+    .contact-pills {
+      display: flex;
+      justify-content: center;
+      gap: 0.875rem;
+      flex-wrap: wrap;
+    }
+
+    .contact-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.55rem;
+      padding: 0.75rem 1.4rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 11px;
+      color: var(--text-2);
+      text-decoration: none;
+      font-size: 0.875rem;
+      font-weight: 500;
+      transition: border-color 0.2s, color 0.2s, transform 0.2s var(--ease);
+    }
+    .contact-pill svg {
+      width: 16px; height: 16px;
+      fill: currentColor;
+      flex-shrink: 0;
+    }
+    .contact-pill:hover {
+      border-color: rgba(201,148,58,0.45);
+      color: var(--accent);
+      transform: translateY(-2px);
+    }
+
+    /* ── Footer ── */
+    footer {
+      text-align: center;
+      padding: 2rem;
+      border-top: 1px solid var(--border);
+      color: var(--text-3);
+      font-family: var(--mono);
+      font-size: 0.75rem;
+      letter-spacing: 0.03em;
+    }
+
     /* ── Reveal animations ── */
     .reveal {
       opacity: 0;
@@ -519,9 +593,14 @@
 
       .hero h1 { letter-spacing: -0.04em; }
 
+      .about-body { grid-template-columns: 1fr; gap: 2rem; }
+      .services-grid { grid-template-columns: 1fr 1fr; }
+
       .client-bar { flex-direction: column; min-height: auto; }
       .client-logo-panel { width: 100%; min-height: 120px; border-right: none !important; border-bottom: 1px solid rgba(201,168,76,0.18); }
       .bronceada-info { border-left: none !important; border-top: 1px solid rgba(0,0,0,0.07); }
+
+      .contact-trust { gap: 1.25rem; }
     }
   </style>
 </head>
@@ -536,8 +615,9 @@
       <span class="bar"></span>
     </button>
     <ul class="nav-links" id="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#work">Work</a></li>
       <li><a href="#skills">Skills</a></li>
-      <li><a href="#client-work">Client Work</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
@@ -555,11 +635,11 @@
       </h1>
 
       <p class="hero-sub">
-        I build websites and software for small businesses and individuals. If you need a site, an app, or something in between — let's talk.
+        I build websites and software for small businesses and individuals. Whatever your project needs, I'll get it done right.
       </p>
 
       <div class="hero-ctas">
-        <a class="btn btn-fill" href="#client-work">View my work</a>
+        <a class="btn btn-fill" href="#work">View my work</a>
         <a class="btn btn-ghost" href="#contact">Get in touch</a>
       </div>
     </div>
@@ -569,6 +649,85 @@
       Scroll
     </div>
   </div>
+
+  <!-- About -->
+  <section id="about">
+    <div class="container">
+      <span class="eyebrow">About</span>
+      <h2 class="section-title reveal">Developer based in Austin, TX</h2>
+      <div class="about-body">
+        <div class="about-text reveal" data-delay="1">
+          <p>I'm a freelance software developer who builds websites and web applications for small businesses and individuals across Austin and beyond.</p>
+          <p>I use whatever tools the project calls for and stay in close communication the whole way through.</p>
+          <p>I've worked with boutiques, bars, and growing local businesses. Whether you need a polished marketing site or something more complex, I'll make sure it gets done right.</p>
+        </div>
+        <div class="services-grid reveal" data-delay="2">
+          <div class="service-card">
+            <h4>Marketing Sites</h4>
+            <p>Fast, polished pages that make a strong first impression for your business.</p>
+          </div>
+          <div class="service-card">
+            <h4>E-commerce</h4>
+            <p>Online stores and product pages built to convert visitors into buyers.</p>
+          </div>
+          <div class="service-card">
+            <h4>Multi-page Sites</h4>
+            <p>Full websites with custom navigation, menus, and content for your needs.</p>
+          </div>
+          <div class="service-card">
+            <h4>Web Apps</h4>
+            <p>Interactive applications and custom software when a simple site isn't enough.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work -->
+  <section id="work">
+    <div class="container">
+      <span class="eyebrow">Work</span>
+      <h2 class="section-title reveal">Recent projects</h2>
+
+      <div class="client-list">
+
+        <!-- Bronceada -->
+        <a class="client-bar reveal" data-delay="1" href="https://www.phenry.dev/bronceada/" target="_blank" rel="noopener noreferrer">
+          <div class="client-logo-panel bronceada-logo">
+            <img src="https://www.phenry.dev/bronceada/imgs/BronceadaLogo.png" alt="Bronceada" />
+          </div>
+          <div class="client-info bronceada-info">
+            <div class="client-meta bronceada-meta">Women's Boutique &middot; Lakeline Mall, Cedar Park TX</div>
+            <h3 class="bronceada-h3">Bronceada</h3>
+            <p class="bronceada-p">Marketing site for a curated women's boutique inside Lakeline Mall. Clean, minimal design with bold yellow accents drives traffic to hand-picked new arrivals and communicates the brand's one-of-a-kind identity — nothing mass-produced.</p>
+            <div class="client-tags bronceada-tags">
+              <span>HTML / CSS</span>
+              <span>Shopify</span>
+              <span>Responsive</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Mayfield's Bar & Billiards -->
+        <a class="client-bar reveal" data-delay="2" href="https://www.phenry.dev/mayfields_bar_and_billiard/" target="_blank" rel="noopener noreferrer">
+          <div class="client-logo-panel mayfields-logo">
+            <div class="mayfields-wordmark">Mayfield's</div>
+          </div>
+          <div class="client-info mayfields-info">
+            <div class="client-meta mayfields-meta">Neighborhood Pool Hall &middot; Northwest Austin, TX</div>
+            <h3 class="mayfields-h3">Mayfield's Bar &amp; Billiards</h3>
+            <p class="mayfields-p">Multi-page marketing site for a neighborhood pool hall open daily noon to 2am. Dark upscale aesthetic — deep teal, felt greens, and gold — conveys the bar's welcoming no-frills atmosphere while still looking polished. Covers drink specials, pool rates, APA league nights, and hours.</p>
+            <div class="client-tags mayfields-tags">
+              <span>HTML / CSS</span>
+              <span>Multi-page</span>
+              <span>Responsive</span>
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
 
   <!-- Skills -->
   <section id="skills">
@@ -622,61 +781,19 @@
     </div>
   </section>
 
-  <!-- Client Work -->
-  <section id="client-work">
-    <div class="container">
-      <span class="eyebrow">Client Work</span>
-      <h2 class="section-title reveal">Sites I've designed</h2>
-
-      <div class="client-list">
-
-        <!-- Bronceada -->
-        <a class="client-bar reveal" data-delay="1" href="https://www.pjhenry.us/bronceada/" target="_blank" rel="noopener noreferrer">
-          <div class="client-logo-panel bronceada-logo">
-            <img src="https://www.pjhenry.us/bronceada/imgs/BronceadaLogo.png" alt="Bronceada" />
-          </div>
-          <div class="client-info bronceada-info">
-            <div class="client-meta bronceada-meta">Women's Boutique &middot; Lakeline Mall, Cedar Park TX</div>
-            <h3 class="bronceada-h3">Bronceada</h3>
-            <p class="bronceada-p">Marketing site for a curated women's boutique inside Lakeline Mall. Clean, minimal design with bold yellow accents drives traffic to hand-picked new arrivals and communicates the brand's one-of-a-kind identity — nothing mass-produced.</p>
-            <div class="client-tags bronceada-tags">
-              <span>HTML / CSS</span>
-              <span>Shopify</span>
-              <span>Responsive</span>
-            </div>
-          </div>
-        </a>
-
-        <!-- Mayfield's Bar & Billiards -->
-        <a class="client-bar reveal" data-delay="2" href="https://www.pjhenry.us/mayfields_bar_and_billiard/" target="_blank" rel="noopener noreferrer">
-          <div class="client-logo-panel mayfields-logo">
-            <div class="mayfields-wordmark">Mayfield's</div>
-          </div>
-          <div class="client-info mayfields-info">
-            <div class="client-meta mayfields-meta">Neighborhood Pool Hall &middot; Northwest Austin, TX</div>
-            <h3 class="mayfields-h3">Mayfield's Bar &amp; Billiards</h3>
-            <p class="mayfields-p">Multi-page marketing site for a neighborhood pool hall open daily noon to 2am. Dark upscale aesthetic — deep teal, felt greens, and gold — conveys the bar's welcoming no-frills atmosphere while still looking polished. Covers drink specials, pool rates, APA league nights, and hours.</p>
-            <div class="client-tags mayfields-tags">
-              <span>HTML / CSS</span>
-              <span>Multi-page</span>
-              <span>Responsive</span>
-            </div>
-          </div>
-        </a>
-
-      </div>
-    </div>
-  </section>
-
   <!-- Contact -->
   <section id="contact">
     <div class="container">
       <span class="eyebrow">Contact</span>
       <h2 class="section-title reveal">Let's build something.</h2>
       <p class="contact-copy reveal" data-delay="1">
-        Open to full-time roles, freelance work, and interesting conversations. I reply to every message.
+        Have a project in mind? Reach out and we'll figure out if we're a good fit. Free initial consultation, no commitment required. I reply to every message.
       </p>
-      <div class="contact-pills reveal" data-delay="2">
+      <div class="contact-trust reveal" data-delay="2">
+        <span class="trust-item"><span class="trust-dot"></span>Free initial consultation</span>
+        <span class="trust-item"><span class="trust-dot"></span>Based in Austin, TX</span>
+      </div>
+      <div class="contact-pills reveal" data-delay="3">
 
         <a class="contact-pill" href="mailto:phillipjh27@gmail.com">
           <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
@@ -697,16 +814,14 @@
     </div>
   </section>
 
-  <footer>Phillip Henry &copy; 2026 &nbsp;&mdash;&nbsp; pjhenry.us</footer>
+  <footer>Phillip Henry &copy; 2026 &nbsp;&mdash;&nbsp; phenry.dev</footer>
 
   <script>
-    // Nav scrolled border
     const nav = document.getElementById('nav');
     window.addEventListener('scroll', () => {
       nav.classList.toggle('scrolled', window.scrollY > 30);
     }, { passive: true });
 
-    // Mobile menu
     const toggle = document.getElementById('nav-toggle');
     const navLinks = document.getElementById('nav-links');
     toggle.addEventListener('click', () => {
@@ -722,7 +837,6 @@
       });
     });
 
-    // Active nav on scroll
     const sections = document.querySelectorAll('section[id]');
     const anchors = document.querySelectorAll('.nav-links a');
     const sectionIO = new IntersectionObserver((entries) => {
@@ -736,7 +850,6 @@
     }, { rootMargin: '-40% 0px -40% 0px' });
     sections.forEach(s => sectionIO.observe(s));
 
-    // Scroll reveal
     const revealIO = new IntersectionObserver((entries) => {
       entries.forEach(e => {
         if (e.isIntersecting) {
